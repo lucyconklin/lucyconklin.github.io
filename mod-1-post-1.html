@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lucy's Bootstrap Github page</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700|Montserrat:400,700" rel="stylesheet">
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700|Montserrat:400,700" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <p id="site-title">blog</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="index.html">posts</a></li>
-          <li><a href="index.html">about</a></li>
-        </ul>
-      </nav>
+  <div class="header">
+    <p id="site-title">blog</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="index.html">posts</a></li>
+        <li><a href="index.html">about</a></li>
+      </ul>
+    </nav>
     </div><!-- end header -->
-    <div class="main">
-
-      <div class="post">
-        <h1>Title</h1>
-        <h2>subtitle</h2>
-        <p>paragraph<span class="bold">bold</span></p>
-        <p>paragraph <span class="highlight">highlight</span></p>
-        <div class="quote"><p class="quote-text">quote div</p></div>
-        <p>paragraph</p>
-      </div><!-- end post -->
-      <div class="spacer"></div>
-
-    </div><!-- end main -->
+    <div class="container">
+      <div class="main">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Forsby_estate_horse.png" class="img-responsive">
+        <div class="row">
+          <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h1>Octal, Hex, Binary and Horse</h1>
+          <h2>Which number system would a horse use?</h2>
+          <p>This module I enjoyed learning about numbering systems. Some of the
+            ones we covered include:
+            <ul>
+              <li>Binary</li>
+              <li>Octal</li>
+              <li>Hex</li>
+            </ul>
+          </p>
+          <p>It sure seems like horses would use binary because they have two
+            hooves and could only count to two. Unless, of course, they used
+            all four hooves and then they would have a 0-3 based numbering
+            system. <span class="bold">Horses are pretty logical though,</span>
+            and would probably see the appeal of binary</p>
+          <p>It is also important to mention that <span class="highlight">horses
+            love computers.</span> They have historically enjoyed the soft whir of
+            computer fans, their ever increasing battery life, and their ability
+            to store and play music.</p>
+            <p>And with that I will leave you with this totally true quote:</p>
+          <div class="quote"><p class="quote-text">Horses have always loved computers<br>
+          -Benjamin Franklin</p></div>
+        </div><!-- end col -->
+      </div><!--end row-->
+      </div><!-- end main -->
+    </div><!--end container-->
     <div class="footer">
       <p id="copyright">made by Lucy</p>
     </div>
-  </div><!-- end container -->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 </body>

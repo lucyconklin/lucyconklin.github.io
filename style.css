@@ -7,9 +7,8 @@ a {
   text-decoration: none;
 }
 
-.container {
-  margin: none;
-  padding: none;
+a:hover, a:focus, a:visited, a:active {
+  text-decoration: none;
 }
 
 .header {
@@ -76,14 +75,22 @@ p {
   font-family: 'Merriweather', serif;
 }
 
-.post-teaser {
+.post-teaser, .post-box {
   padding: 20px;
 }
 
-.post-teaser:hover {
+.post-teaser:hover, .post-box:hover {
   background-color: #fffeee;
   border: 1px solid gold;
   padding: 19px;
+}
+
+.post-box h1 {
+  font-size: 32px;
+}
+
+.post-box h2 {
+  font-size: 18px;
 }
 
 .bold {
@@ -91,7 +98,7 @@ p {
 }
 
 .highlight {
-  background: rgba(255, 230, 0, 0.5);
+  background: rgba(255, 230, 0, 0.2);
   padding: 3px 5px;
   margin: -3px -5px;
   display:inline;
@@ -116,11 +123,10 @@ p {
   font-style: italic;
 }
 
-.main {
-  width: 60%;
-  margin: auto;
-  padding: 50px 0 50px 0;
-  }
+.main ul {
+  list-style: none;
+  margin-left: 20px
+}
 
 .spacer {
   border-bottom: 1px solid #ddd;
@@ -129,11 +135,11 @@ p {
 }
 
 .footer {
-  position: relative;
+  position: relative;;
   bottom: 0px;
   width: 100%;
   background-color: #222;
-  height: 50px;
+  height: 150px;
   padding-top: 10px;
 }
 
