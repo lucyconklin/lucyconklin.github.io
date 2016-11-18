@@ -114,7 +114,7 @@ p {
 .quote {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 10px 20px;
   border-left: 2px solid #777;
 }
 
@@ -126,6 +126,10 @@ p {
 .main ul {
   list-style: none;
   margin-left: 20px
+}
+
+.main ul li {
+  font-family: 'Merriweather', serif;
 }
 
 .spacer {
