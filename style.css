@@ -1,6 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: none;
+  padding: none;
+}
+
+.header {
+  background-color: rgba(255,255,255,.3);
+  height: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#site-title {
+  color: #999;
+  display: inline-block;
+  float: left;
+  margin-top: 16px;
+}
+
+.main {
+  clear: both;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #555;
+  padding: 16px;
+}
+
+nav li a:hover {
+  color: #000;
+  background: rgba(255, 230, 0, 0.3);
+}
+
+h1 {
+color: #666;
+font-size: 40px;
+font-family: 'Montserrat', sans-serif;
+line-height: 1.5em;
+}
 
 h2 {
-font-color: blue;
-font-family: Helvetica, sans-serif;
+  color: #333;
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 1.7em;
+
+  }
+
+p {
+  color: #000;
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+}
+
+.post-teaser {
+  padding: 20px;
+}
+
+.post-teaser:hover {
+  background-color: #fffeee;
+  border: 1px solid gold;
+  padding: 19px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.highlight {
+  background: rgba(255, 230, 0, 0.5);
+  padding: 3px 5px;
+  margin: -3px -5px;
+  display:inline;
+  }
+
+.highlight:hover {
+  background: rgba(255, 230, 0, 1);
+  padding: 3px 5px;
+  margin: -3px -5px;
+  display:inline;
+  }
+
+.quote {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 0 10px 10px;
+  border-left: 2px solid #777;
+}
+
+.quote-text {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+
+.main {
+  width: 60%;
+  margin: auto;
+  padding: 50px 0 50px 0;
+  }
+
+.spacer {
+  border-bottom: 1px solid #ddd;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background-color: #222;
+  height: 50px;
+  padding-top: 10px;
+}
+
+#copyright {
+  color: #bbb;
+  font-size: 14px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 300;
 }
