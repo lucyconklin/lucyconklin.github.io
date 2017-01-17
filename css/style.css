@@ -48,7 +48,10 @@ header {
 
 .project {
   width: 33%;
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: top; }
+  .project p {
+    padding-right: 20px; }
 
 .skills {
   width: 50%;
@@ -78,6 +81,13 @@ header {
 
   .project {
     width: 100%; } }
+.transparent-bold, p a {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.6); }
+
+p a:hover {
+  color: rgba(255, 255, 255, 0.8); }
+
 h1, h2 {
   color: white; }
 

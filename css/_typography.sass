@@ -1,6 +1,17 @@
 $header_font: 'Montserrat', 'Helvetica', sans-serif
 $main_font: 'Merriweather', 'Times', serif
 
+
+.transparent-bold
+  font-weight: 700
+  color: rgba(0,0,0,0.6)
+
+p a
+  @extend .transparent-bold
+
+p a:hover
+  color: rgba(255,255,255,0.8)
+  
 h1, h2
   color: white
 
