@@ -50,9 +50,11 @@ ul li
     i
       color: rgba(255, 255, 255, 0.7)
 
-.skills ul li
-  font-family: $header_font
+.skills ul
   padding: 18px 10px 0 10px
+  li
+    font-family: $header_font
+    padding: 6px
 
 .project
   ul
@@ -62,8 +64,11 @@ ul li
       line-height: 1.5 em
       display: inline-block
       padding: 4px
-      color: rgba(0,0,0, 0.4)
+      color: rgba(0,0,0, 0.5)
 
-.ruby:hover
+.hoverstate
   background-color: rgba(255,255,255,0.3)
   color: rgba(0,0,0,0.6)
+
+li.ruby:hover, li.html:hover, li.heroku:hover, li.sass:hover
+  @extend .hoverstate
