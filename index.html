@@ -4,58 +4,187 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Lucy's Bootstrap Github page</title>
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700|Montserrat:400,700" rel="stylesheet">
+  <title>You Should Hire Lucy Conklin</title>
+  <script src="https://use.fontawesome.com/b46d447c0d.js"></script>
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700|Montserrat:400,700" rel="stylesheet">
-  <link href="./style.css" rel="stylesheet" type="text/css">
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div class="header">
-    <p id="site-title">lucy conklin</p>
-    <nav>
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">posts</a></li>
-        <li><a href="#">about</a></li>
+  <header>
+    <h1>Lucy Conklin</h1>
+    <div class="contact">
+      <ul class="contact">
+        <li class="left">
+          <a href="#">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            lucy@lucyconklin.com
+          </a>
+        </li>
+        <li class="center">
+          <a href="#">
+            <i class="fa fa-phone-square" aria-hidden="true"></i>
+            570.713.9582
+          </a>
+        </li>
+        <li class="right">
+          <a href="#">
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+            @lucyconklin
+          </a>
+        </li>
       </ul>
-    </nav>
-  </div><!-- end header -->
-  <div class="container">
-    <div class="main">
-      <div class="post-teaser"><a href="mod-1-post-1.html">
-        <h1>Octal, Hex, Binary and Horse</h1>
-        <h2>Which number system would a horse use?</h2>
-        <p>This module I enjoyed learning about numbering systems. Some of the
-          ones we covered include...</p>
-      </a></div><!-- end post-teaser -->
-      <div class="spacer"></div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="post-box">
-            <a href="#">
-            <h1>Technical Topic Blog Post</h1>
-            <h2>this is a post about a technical topic</h2>
-            </a>
-          </div><!-- end post-teaser -->
-        </div><!--end col-->
-        <div class="col-md-6">
-          <div class="post-box">
-            <a href="#">
-            <h1>Technical Topic Blog Post</h1>
-            <h2>this is a post about a technical topic</h2>
-            </a>
-          </div><!-- end post-teaser -->
-        </div><!--end col-->
-    </div><!--end row-->
-    <div class="spacer"></div>
-    </div><!-- end main -->
-  </div><!-- end container -->
-  <div class="footer">
-    <p id="copyright">made by Lucy</p>
+      <ul class="contact">
+        <li class="left">
+          <a href="#">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            lucyconklin.com
+          </a>
+        </li>
+        <li class="center">
+          <a href="#">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            lucy-conklin
+          </a>
+        </li>
+        <li class="right">
+          <a href="#">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            @lucyconklin
+          </a>
+        </li>
+    </ul>
+    </div>
+  </header>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Ruby on Rails</li>
+      <li>ActiveRecord</li>
+      <li>PostgreSQL</li>
+      <li>HTML/CSS</li>
+      <li>SASS</li>
+      <li>JavaScript</li>
+      <li>Heroku</li>
+      <li>Github</li>
+      <li>Photoshop</li>
+      <li>Illustrator/Sketch</li>
+    </ul>
+  </section>
+
+  <section class="summary">
+     <p>I am a scientist turned artist turned software developer looking to
+       work <strong>with a team</strong>
+       on <strong>important projects</strong>,
+       in an environment where I <strong>never stop learning</strong>.
+  </section><!-- end summary -->
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Job Tracker</h3>
+      <ul>
+        <li class="ruby">Ruby on Rails</li>
+        <li class="html">HTML/CSS</li>
+        <li class="heroku">Heroku</li>
+      </ul>
+      <a href="#">link to project</a>
+      <a href="#">link to project(Github)</a>
+      <p>Job Tracker is a rails app to keep organized during my job search.</p>
+    </div>
+    <div class="project">
+      <h3>Timber Shop</h3>
+      <ul>
+        <li class="ruby">Ruby on Rails</li>
+        <li class="sass">SASS</li>
+        <li class="heroku">Heroku</li>
+        <li>Travis CI</li>
+        <li>Stripe for Credit Card Integration</li>
+      </ul>
+      <a href="#">link to project</a>
+      <a href="#">link to project(Github)</a>
+      <p>Project introduction</p>
+    </div>
+    <div class="project">
+      <h3>HTTP</h3>
+      <ul>
+        <li class="ruby">Ruby</li>
+        <li class="http">HTTP</li>
+        <li>Postman</li>
+      </ul>
+      <a href="#">link to project</a>
+      <a href="#">link to project(Github)</a>
+      <p>For this project in module 1 at the Turing school I programmed my own
+      server to parse, create, and handle HTTP requests, I created a number guessing game so I could
+     interact with the server via HTTP requests, I wrote a JSON response parser, and
+      a handled response codes.</p>
+    </div>
+  </section>
+
+  <section class="experience">
+  <h2>Experience</h2>
+  <div class="job">
+    <h3>Freelance Science Illustrator</h3>
+    <p><strong>Lucy Conklin Illustration</strong>   2012-2016</p>
+    <p>As an illustrator I worked with clients to develop dynamic imagery for print
+      and digital use. My clients include the Natural Resources Defense Council,
+      The Scientist Magazine, Edible Magazine, National Parks, the Exploratorium (San Francisco),
+     the Randall Museum (San Francisco), and a team of polar scientists from Rutgers University.
+      I was responsible for logo design, traditional illustration, digital illustration, and
+      animation.</p>
   </div>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <div class="job">
+    <h3>Instructor, Science Communication</h3>
+    <p><strong>University of California, Santa Cruz</strong>   2014-2016</p>
+
+    <p>At UCSC I created a new class in the Science Communication department, I had
+      the pleasure of teaching a few students again when they applied to the
+      science illustration program at CSUMB.</p>
+  </div>
+  <div class="job">
+    <h3>Assistant Instructor, Science Illustration</h3>
+    <p><strong>California State University, Monterey Bay</strong>  2013-2016</p>
+    <p></p>
+  </div>
+  </section>
+
+  <section class="education">
+  <h2>Education</h2>
+  <div class="school">
+    <h3>The Turing School of Software &amp; Design</h3>
+    <h4>Backend Engineering, April 2017</h4>
+    <p>My classwork focused on Ruby on Rails, Javascript, Agile workflows,
+      group projects, HTML/CSS/SASS, Postgres, and Continuous Deployment to Heroku.
+      I also had the opportunity to work on personal projects related to
+      datavisualization, and front-end design.</p>
+      <p>The best place to see some of my code is my
+        <a href="#">
+          Github profile.
+        </a>
+      </p>
+  </div>
+  <div class="school">
+    <h3>California State University, Monterey Bay</h3>
+    <h4>Masters Certificate, Science Illustration, 2012</h4>
+    <p>This truly life-changing experience taught me a lot about passion, and how
+     to follow the questions I had while learning. In 8 short months I learned
+     traditional illustration in ink, watercolor, acrylic, and gouache,
+     Adobe's creative suite, basic graphic and web design principles,
+   animation, science communication, how to get and work with clients, and
+   freelance business fundamentals.</p>
+  </div>
+  <div class="school">
+    <h3>Bucknell University</h3>
+    <h4>B.A. Physics, 2008</h4>
+    <p>A classmate told me that taking Thermodynamics would change my life. He
+       was very right, and not a day goes by when I don't think about somthing
+        I learned in that class. My coursework also included laboratory work,
+       quantum, electromagnetism, and astrophysics. As a student I also competed
+      on the ultimate frisbee team and took nearly enough studio art classes to
+    earn a minor.</p>
+  </div>
+  </section>
 </body>
 </html>
