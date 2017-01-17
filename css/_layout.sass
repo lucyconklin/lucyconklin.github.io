@@ -24,7 +24,7 @@ body
   margin-right: auto
   margin-left: auto
   display: inline-block
-  float: right
+  vertical-align: right
 
 strong
   font-weight: 700
@@ -55,11 +55,12 @@ header
   display: inline-block
   vertical-align: top
   p
-    padding-right: 20px
+    padding-right: 3%
 
 .skills
   width: 50%
   display: inline-block
+  vertical-align: top
   ul
     li
       display: inline-block
@@ -79,10 +80,14 @@ header
       width: 100%
       float: none
   .project
-    width: 49%
+    width: 48%
 
 @media screen and (max-width: $breakpoint-mobile)
   body
     background-color: azure
   .project
+    width: 100%
+  .summary
+    width: 100%
+  .skills
     width: 100%
