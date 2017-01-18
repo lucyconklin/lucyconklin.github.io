@@ -24,7 +24,6 @@ body
   margin-right: auto
   margin-left: auto
   display: inline-block
-  vertical-align: right
   text-align: center
 
 strong
@@ -86,9 +85,14 @@ header
 @media screen and (max-width: $breakpoint-mobile)
   body
     background-color: azure
+  .contact ul.contact li
+    min-width: 100%
+    margin-top: 5px
   .project
     width: 100%
   .summary
     width: 100%
+    p
+      width: 80%
   .skills
     width: 100%

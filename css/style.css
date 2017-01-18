@@ -20,7 +20,6 @@ body {
   margin-right: auto;
   margin-left: auto;
   display: inline-block;
-  vertical-align: right;
   text-align: center; }
 
 strong {
@@ -81,11 +80,17 @@ header {
   body {
     background-color: azure; }
 
+  .contact ul.contact li {
+    min-width: 100%;
+    margin-top: 5px; }
+
   .project {
     width: 100%; }
 
   .summary {
     width: 100%; }
+    .summary p {
+      width: 80%; }
 
   .skills {
     width: 100%; } }
