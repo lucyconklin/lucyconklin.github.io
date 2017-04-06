@@ -1,7 +1,6 @@
 $header_font: 'Montserrat', 'Helvetica', sans-serif
 $main_font: 'Merriweather', 'Times', serif
 
-
 .transparent-bold
   font-weight: 700
   color: rgba(0,0,0,0.6)
@@ -19,7 +18,7 @@ h3, h4
   color: rgba(255,255,255,0.8)
   line-height: 1.5em
 
-p, a , li
+p, a, li
   color: rgba(0,0,0,0.6)
 
 a
@@ -55,11 +54,12 @@ ul li
   a
     color: rgba(0,0,0,0.6)
     font-family: $main_font
-    font-size: 0.8em
+    font-size: 16px
   a:hover
     color: rgba(255, 255, 255, 0.7)
     i
       color: rgba(255, 255, 255, 0.7)
+      font-size: 20px
 
 .skills ul
   padding: 18px 10px 0 10px
@@ -89,3 +89,11 @@ ul li
 
 li.ruby:hover, li.html:hover, li.heroku:hover, li.sass:hover
   @extend .hoverstate
+
+.job
+  ul li
+    @extend p
+    font-size: 16px
+    list-style: circle
+    line-height: 20px
+    margin-left: 25px

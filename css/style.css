@@ -2,9 +2,9 @@ body {
   margin: 3%;
   padding: 0 25px 25px 25px;
   border: 4px solid rgba(255, 255, 255, 0.5);
-  background: #02AAB0;
-  background: -webkit-linear-gradient(to left, #02AAB0, #00CDAC);
-  background: linear-gradient(to left, #02AAB0, #00CDAC); }
+  background: #457fca;
+  background: -webkit-linear-gradient(to right, #5691c8, #457fca);
+  background: linear-gradient(to right, #5691c8, #457fca); }
 
 .projects h2, .education h2, .experience h2, .skills h2 {
   border-bottom: 4px solid rgba(255, 255, 255, 0.5);
@@ -15,12 +15,13 @@ body {
   margin: 20px 0 20px 0; }
 
 .summary {
-  width: 40%;
   padding: 25px;
-  margin-right: auto;
-  margin-left: auto;
   display: inline-block;
   text-align: center; }
+  .summary p, .summary .job ul li, .job ul .summary li {
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%; }
 
 strong {
   font-weight: 700; }
@@ -47,14 +48,14 @@ header {
       width: 25%; }
 
 .project {
-  width: 33%;
+  width: 49%;
   display: inline-block;
   vertical-align: top; }
-  .project p {
-    padding-right: 3%; }
+  .project p, .project .job ul li, .job ul .project li {
+    padding-right: 5%; }
 
 .skills {
-  width: 50%;
+  width: 100%;
   display: inline-block;
   vertical-align: top; }
   .skills ul li {
@@ -89,16 +90,18 @@ header {
 
   .summary {
     width: 100%; }
-    .summary p {
-      width: 80%; }
+    .summary p, .summary .job ul li, .job ul .summary li {
+      width: 80%;
+      margin-right: 10%;
+      margin-left: 10%; }
 
   .skills {
     width: 100%; } }
-.transparent-bold, p a {
+.transparent-bold, p a, .job ul li a {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.6); }
 
-p a:hover {
+p a:hover, .job ul li a:hover {
   color: rgba(255, 255, 255, 0.8); }
 
 h1, h2 {
@@ -108,7 +111,7 @@ h3, h4 {
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.5em; }
 
-p, a, li {
+p, .job ul li, a, li {
   color: rgba(0, 0, 0, 0.6); }
 
 a {
@@ -134,7 +137,7 @@ h4 {
   font-family: "Montserrat", "Helvetica", sans-serif;
   text-transform: uppercase; }
 
-p {
+p, .job ul li {
   font-family: "Merriweather", "Times", serif;
   font-size: 16px;
   line-height: 1.6em;
@@ -143,11 +146,12 @@ p {
 ul li a {
   color: rgba(0, 0, 0, 0.6);
   font-family: "Merriweather", "Times", serif;
-  font-size: 0.8em; }
+  font-size: 16px; }
 ul li a:hover {
   color: rgba(255, 255, 255, 0.7); }
   ul li a:hover i {
-    color: rgba(255, 255, 255, 0.7); }
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px; }
 
 .skills ul {
   padding: 18px 10px 0 10px; }
@@ -156,7 +160,7 @@ ul li a:hover {
     font-family: "Montserrat", "Helvetica", sans-serif;
     padding: 6px; }
 
-.summary p {
+.summary p, .summary .job ul li, .job ul .summary li {
   font-size: 1.3em;
   font-family: "Montserrat", "Helvetica", sans-serif;
   color: rgba(255, 255, 255, 0.8); }
@@ -172,5 +176,11 @@ ul li a:hover {
 .hoverstate, li.ruby:hover, li.html:hover, li.heroku:hover, li.sass:hover {
   background-color: rgba(255, 255, 255, 0.3);
   color: rgba(0, 0, 0, 0.6); }
+
+.job ul li {
+  font-size: 16px;
+  list-style: circle;
+  line-height: 20px;
+  margin-left: 25px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,9 +9,9 @@
   <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+  </script>
   <script type='text/javascript' src="./js/script.js"></script>
-  <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700|Montserrat:400,700" rel="stylesheet">
   <link href="./css/reset.css" rel="stylesheet" type="text/css">
   <link href="./css/style.css" rel="stylesheet" type="text/css">
@@ -63,22 +63,6 @@
     </div>
   </header>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li class="ruby">Ruby on Rails</li>
-      <li>ActiveRecord</li>
-      <li class="postgres">PostgreSQL</li>
-      <li class="html">HTML/CSS</li>
-      <li class="sass">SASS</li>
-      <li class="js">JavaScript</li>
-      <li class="heroku">Heroku</li>
-      <li>Github</li>
-      <li class="photoshop">Photoshop</li>
-      <li class="vector">Illustrator/Sketch</li>
-    </ul>
-  </section>
-
   <section class="summary">
      <p>I am a scientist turned artist turned software developer looking to
        work <strong>with a team</strong>
@@ -86,49 +70,95 @@
        in an environment where I <strong>never stop learning</strong>.
   </section><!-- end summary -->
 
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li class="ruby">Ruby</li>
+      <li class="rails">Rails</li>
+      <li class="tdd">TDD</li>
+      <li class="rest">REST</li>
+      <li class="mvc">MVC</li>
+      <li class="postgres">PostgreSQL</li>
+      <li class="html">HTML</li>
+      <li class="css">CSS</li>
+      <li class="sass">SASS</li>
+      <li class="js">JavaScript</li>
+      <li class="datavis">D3 for datavisualization</li>
+      <li class="react">React</li>
+      <li class="jquery">jQuery</li>
+      <li>Git</li>
+    </ul>
+  </section>
+
   <section class="projects">
     <h2>Projects</h2>
     <div class="project">
-      <h3>Job Tracker</h3>
+      <h3>International Space Station Tracker</h3>
       <ul>
-        <li class="ruby">Ruby on Rails</li>
-        <li class="html">HTML/CSS</li>
-        <li class="heroku">Heroku</li>
+        <li class="rails">Ruby on Rails</li>
+        <li class="js">JavaScript</li>
+        <li class="datavis">D3 for datavisualization</li>
+        <li class="ci">Continuous Integration</li>
+        <li class="cd">Continuous Deployment</li>
+        <li>Twilio</li>
+        <li class="rest">REST</li>
       </ul>
-      <p>Job Tracker is a rails app to keep organized during my job search. This
-       one is seeded with some very fake jobs so I could process data on the dashboard.
-       A big part of this project was custom routes and filtering with params.</p>
+      <p>There are people in space. Right. Now. You can even see them if you know
+      when, and where to look. I created this International Space Station tracker
+      to show users where the space station is above the earth. From there, users
+      can enter their zipcode to get the next time the space station will be
+      passing overhead. Users can also enter their phone number to recieve a text
+      message reminder 5 minutes before the space station passes overhead.</p>
+      <p>This project was a finalist for Turing student demo night in March 2016.</p>
        <p>
-         <a href="https://lit-sea-77222.herokuapp.com/" target="blank">
+         <a href="international-space-station.herokuapp.com" target="blank">
            <i class="fa fa-globe" aria-hidden="true">
            </i>
          </a>
-         <a href="https://github.com/lucyconklin/job-tracker" target="blank">
+         <a href="https://github.com/lucyconklin/international_space_station" target="blank">
            <i class="fa fa-github-square" aria-hidden="true">
            </i>
          </a>
        </p>
     </div>
+
+
+
     <div class="project">
-      <h3>Timber Shop</h3>
+      <h3>Pivotal Tracker Gem</h3>
       <ul>
-        <li class="ruby">Ruby on Rails</li>
-        <li class="sass">SASS</li>
-        <li class="heroku">Heroku</li>
-        <li>Travis CI</li>
-        <li>Stripe for Credit Card Integration</li>
+        <li class="ruby">Ruby</li>
+        <li class="http">HTTP</li>
+        <li>Open Source</li>
       </ul>
-      <p>For this 4-person group project we were tasked with creating an online
-        shop using rails. The shop has users and admins, continuous deployment
-        to Heroku using Travis CI. We also added credit card functionality with
-        Stripe, and preprocessed our css with SASS.</p>
+      <p>The Pivotal Tracker gem is an open source tool for integrating Pivotal
+        Tracker into your projects. I worked with a team to update the gem to
+        Rails 5, and used VCR for testing. I was eager to give back to the
+        community, and this project definitely sparked an interest in contributing
+        to more open source projects.</p>
       <p>
-        <a href="https://timber-shop.herokuapp.com/" target="blank">
-          <i class="fa fa-globe" aria-hidden="true">
+        <a href="https://github.com/jasonnoble/pivotal-tracker">
+          <i class="fa fa-github-square" aria-hidden="true">
           </i>
         </a>
-        <a href="https://github.com/lucyconklin/little_shop" target="blank">
-          <i class="fa fa-github-square" aria-hidden="true">
+      </p>
+    </div>
+
+
+
+    <div class="project">
+      <h3>Rales Engine</h3>
+      <ul>
+        <li class="rails">Ruby on Rails</li>
+        <li class="rest">REST</li>
+        <li class="tdd">TDD</li>
+      </ul>
+      <p>For this 4-day paired project, we took sales data, and created an api
+        with 42 robustly tested endpoints and documentation.
+      </p>
+      <p>
+        <a href="https://github.com/lucyconklin/rails_engine" target="blank">
+          <i class="fa fa-globe" aria-hidden="true">
           </i>
         </a>
       </p>
@@ -138,7 +168,6 @@
       <ul>
         <li class="ruby">Ruby</li>
         <li class="http">HTTP</li>
-        <li>Postman</li>
       </ul>
       <p>For this project at the Turing School I programmed my own
       server to parse, create, and handle HTTP requests, I created a number guessing game so I could
@@ -154,47 +183,46 @@
   </section>
 
   <section class="experience">
-  <h2>Experience</h2>
-  <div class="job">
-    <h3>Freelance Science Illustrator</h3>
-    <p><strong>Lucy Conklin Illustration</strong>   2012-2016</p>
-    <p>As an illustrator I worked with clients to develop dynamic imagery for print
-      and digital use. My clients include the Natural Resources Defense Council,
-      The Scientist Magazine, Edible Magazine, National Parks, the Exploratorium (San Francisco),
-     the Randall Museum (San Francisco), and a team of polar scientists from Rutgers University.
-      I was responsible for logo design, web design, traditional illustration,
-      digital illustration, infographics, and animation.</p>
-  </div>
-  <div class="job">
-    <h3>Instructor, Science Communication</h3>
-    <p><strong>University of California, Santa Cruz</strong>   2014-2016</p>
-    <p>At UCSC I created a new class in the Science Communication department, I had
-      the pleasure of teaching a few students again when they applied to the
-      science illustration program at CSUMB.</p>
-  </div>
-  <div class="job">
-    <h3>Assistant Instructor, Science Illustration</h3>
-    <p><strong>California State University, Monterey Bay</strong>  2013-2016</p>
-    <p>As a part of the team at CSUMB I taught Zoological Illustration, created
-      the curriculum for, and taught a field sketching course, revamped the
-      professional website part of the curriculum, started an Instagram account
-      and oversaw it's growth to 1.3k followers, developed a website redesign
-      strategy for the program and worked with the web and marketing team to
-      implement it, designed the promotional material for our annual student
-      showcase, updated the website, and parsed our Google Analytics information
-      for strategies to attract more high-quality applicants.</p>
-  </div>
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Freelance Science Illustrator</h3>
+      <p><strong>Lucy Conklin Illustration</strong> June 2012 - current</p>
+      <ul>
+        <li>clients include the Natural Resources Defense Council,
+        The Scientist Magazine, Edible Magazine, National Parks, the Exploratorium (San Francisco),
+       the Randall Museum (San Francisco), and a team of polar scientists from Rutgers University</li>
+       <li>responsible for logo design, web design, traditional illustration,
+       digital illustration, infographics, and animation</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Assistant Instructor, Science Illustration</h3>
+      <p><strong>California State University, Monterey Bay</strong>  September 2013- August 2016</p>
+      <ul>
+        <li>worked with the web team to create a website redesign strategy for program site</li>
+        <li>developed curriculum for, and taught portfolio website design for illustrators</li>
+        <li>started an Instagram account and oversaw it's growth to 1.3k followers</li>
+        <li>parsed Google Analytics information for strategies to attract more high-quality applicants</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Instructor, Science Communication</h3>
+      <p><strong>University of California, Santa Cruz</strong>  July 2014 - July 2016</p>
+      <ul>
+        <li>developed curriculum for, and taught undergraduate natural science illustration</li>
+      </ul>
+    </div>
   </section>
 
   <section class="education">
   <h2>Education</h2>
   <div class="school">
     <h3>The Turing School of Software &amp; Design</h3>
-    <h4>Backend Engineering, April 2017</h4>
-    <p>My classwork focused on Ruby on Rails, Javascript, Agile workflows,
-      group projects, HTML/CSS/SASS, Postgres, and Continuous Deployment to Heroku.
-      I also had the opportunity to work on personal projects related to
-      datavisualization, and front-end design.</p>
+    <h4>Backend Engineering, October 2016 - April 2017</h4>
+    <p>My classwork focused on Ruby on Rails, Javascript, React, Agile workflows,
+      group projects, HTML/CSS/SASS, Postgres, Continuous Integration (with Travis.ci)
+      and Continuous Deployment to Heroku. I also had the opportunity to work on
+      personal projects related to datavisualization, and front-end design.</p>
       <p>The best place to see some of my code is my
         <a href="https://github.com/lucyconklin" target="blank">
           Github profile.
@@ -203,7 +231,7 @@
   </div>
   <div class="school">
     <h3>California State University, Monterey Bay</h3>
-    <h4>Masters Certificate, Science Illustration, 2012</h4>
+    <h4>Masters Certificate, Science Illustration 2012</h4>
     <p>This truly life-changing experience taught me a lot about passion, and how
      to follow the questions I had while learning. In 8 short months I learned
      traditional illustration in ink, watercolor, acrylic, and gouache,
@@ -213,7 +241,7 @@
   </div>
   <div class="school">
     <h3>Bucknell University</h3>
-    <h4>B.A. Physics, 2008</h4>
+    <h4>B.A. Physics 2008</h4>
     <p>A classmate told me that taking Thermodynamics would change my life. He
        was very right, and not a day goes by when I don't think about something
         I learned in that class. My coursework also included laboratory work,
