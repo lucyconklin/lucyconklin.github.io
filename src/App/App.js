@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import styled from 'styled-components';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 const Button = styled.button`
-  background: ${props => props.primary ? 'palevioletred' : 'white'};
-  color: ${props => props.primary ? 'white' : 'palevioletred'};
+  background: ${props => props.primary ? '#374c5f' : 'white'};
+  color: ${props => props.primary ? 'white' : '#374c5f'};
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
-  border: 2px solid palevioletred;
+  border: 2px solid #374c5f;
   border-radius: 3px;
 `;
 
@@ -17,13 +19,13 @@ const buttonText = "I'm a button"
 
 const Wrapper = styled.section`
   padding: 4em;
-  background: papayawhip;
+  background: #cce0d5;
 `;
 
 const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;
-  color: palevioletred;
+  color: #374c5f;
 `;
 
 class App extends Component {
@@ -33,11 +35,13 @@ class App extends Component {
   {
     return (
       <div className="App">
+        <Header />
         <Wrapper>
-          <Title>Lucy Conklin's Github Pages Sandbox</ Title>
+          <Title>{"Lucy Conklin's Github Pages Sandbox"}</ Title>
           <Button>{ buttonText }</ Button>
           <Button primary>Primary</ Button>
         </ Wrapper>
+        <Footer />
       </div>
     );
   }
