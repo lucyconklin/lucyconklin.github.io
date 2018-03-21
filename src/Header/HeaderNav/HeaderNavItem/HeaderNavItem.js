@@ -3,11 +3,21 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom'
 
 const NavItem = styled.section`
-  color: #304D6E;
   display: inline-block;
   padding: 8px;
   margin: 8px;
+  &:hover {
+    background-color: #E8EAF6;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  color: #303F9F;
+  font-weight: bold;
   text-decoration: none;
+  &:hover {
+    color: #1A237E;
+  }
 `;
 
 class HeaderNavItem extends Component {
@@ -22,7 +32,7 @@ class HeaderNavItem extends Component {
   render() {
     return (
       <NavItem>
-        <Link to={this.props.path}>{this.props.name}</Link>
+        <StyledLink to={this.props.path}>{this.props.name}</StyledLink>
       </NavItem>
     );
   }

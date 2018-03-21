@@ -6,11 +6,17 @@ import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Now from './Now/Now';
 import NoMatch from './NoMatch/NoMatch';
+import styled from 'styled-components';
+
+const Container = styled.section`
+  padding: 1em;
+  background-color: #E8EAF6;
+`;
 
 class Main extends Component {
   render() {
     return (
-      <main>
+      <Container>
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/about' component={About}/>
@@ -19,7 +25,7 @@ class Main extends Component {
           <Route path='/now' component={Now}/>
           <Route component={NoMatch}/>
         </Switch>
-      </main>
+      </Container>
     );
   }
 }

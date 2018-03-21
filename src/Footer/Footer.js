@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const Copyright = styled.section`
+const FooterInfo = styled.section`
   padding: 4em 0;
-  background: #374c5f;
-  color: white;
+  background: #5C6BC0;
+  color: #E8EAF6;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -19,9 +19,10 @@ class Footer extends Component {
   ) 
   {
     return (
-      <div className="Footer">
-        <Copyright>{ "lucy conklin 2017" }</ Copyright>
-      </div>
+      <FooterInfo>
+        <p>{ 'lucy@lucyconklin.com' }</p>
+        <p>{ "lucy conklin 2017" }</ p>
+      </FooterInfo>
     );
   }
 }

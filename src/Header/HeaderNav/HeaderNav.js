@@ -6,16 +6,14 @@ const Nav = styled.section`
   height: 80px;
 `;
 
-const NavItems = [ { name: 'About'}, { name: 'Home'}, { name: 'Contact'}]
-
 class HeaderNav extends Component {
   render(
   ) 
   {
     return (
       <Nav>
+        <HeaderNavItem name="Home" path="/"/>
         <HeaderNavItem name="About" path="/about"/>
-        <HeaderNavItem name="Home" path="/home"/>
         <HeaderNavItem name="Contact" path="/contact"/>
         <HeaderNavItem name="Projects" path="/projects"/>
         <HeaderNavItem name="Now" path="/now"/>

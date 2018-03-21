@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header1 from '../../Typography/Header1'
 import styled from 'styled-components';
 
 class About extends Component {
@@ -6,7 +7,10 @@ class About extends Component {
   ) 
   {
     return (
-      <h2>About!</h2>
+      <div>
+        <Header1>About!</Header1>
+        <p>This is a paragraph!</p>
+      </div>
     );
   }
 }
