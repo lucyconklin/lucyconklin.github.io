@@ -4,6 +4,7 @@ import './App.css';
 import styled from 'styled-components';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import Main from '../Main/Main';
 
 const Button = styled.button`
   background: ${props => props.primary ? '#374c5f' : 'white'};
@@ -17,33 +18,15 @@ const Button = styled.button`
 
 const buttonText = "I'm a button"
 
-const Wrapper = styled.section`
-  padding: 4em;
-  background: #cce0d5;
-`;
-
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: #374c5f;
-`;
-
 class App extends Component {
-  
-  render(
-  ) 
-  {
+  render() {
     return (
-      <div className="App">
+      <div>
         <Header />
-        <Wrapper>
-          <Title>{"Lucy Conklin's Github Pages Sandbox"}</ Title>
-          <Button>{ buttonText }</ Button>
-          <Button primary>Primary</ Button>
-        </ Wrapper>
+        <Main />
         <Footer />
       </div>
-    );
+    )
   }
 }
 
