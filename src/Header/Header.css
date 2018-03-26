@@ -1,0 +1,19 @@
+.app-logo #Path {
+  animation: color-change 10s linear infinite;
+}
+
+.header-logo {
+  margin: 10px;
+}
+
+@keyframes color-change {
+  0% {fill: #F1B62B}
+  11% {fill: #E37C22}
+  23% {fill: #DA0B36}
+  37% {fill: #AF0B58}
+  50% {fill: #7B3A88}
+  64% {fill: #3F51B5}
+  77% {fill: #1CA176}
+  91% {fill: #7DB759}
+  100% {fill: #F1B62B}
+}

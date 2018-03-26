@@ -4,6 +4,7 @@ import HeaderNavItem from './HeaderNavItem/HeaderNavItem';
 
 const Nav = styled.section`
   height: 80px;
+  display: inline;
 `;
 
 class HeaderNav extends Component {

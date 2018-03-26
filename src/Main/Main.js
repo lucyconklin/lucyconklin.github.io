@@ -11,6 +11,9 @@ import styled from 'styled-components';
 const Container = styled.section`
   padding: 1em;
   background-color: #E8EAF6;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 class Main extends Component {
