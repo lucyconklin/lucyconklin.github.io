@@ -4,8 +4,26 @@ import HeaderNavItem from './HeaderNavItem/HeaderNavItem';
 
 const Nav = styled.section`
   height: 80px;
-  display: inline;
+  margin-top: 28px;
+  float: left;
 `;
+
+const routes = [
+  {
+    path: '/',
+    name: 'Home'
+  },
+  {
+    path:'/about',
+    name: 'About'
+  },
+  {
+    path:'/contact',
+    name:'Contact'
+  }
+]
+
+const routeLinks = routes.map((route, i) => <HeaderNavItem key={i} exact {...route} />)
 
 class HeaderNav extends Component {
   render(
@@ -13,11 +31,7 @@ class HeaderNav extends Component {
   {
     return (
       <Nav>
-        <HeaderNavItem name="Home" path="/"/>
-        <HeaderNavItem name="About" path="/about"/>
-        <HeaderNavItem name="Contact" path="/contact"/>
-        <HeaderNavItem name="Projects" path="/projects"/>
-        <HeaderNavItem name="Now" path="/now"/>
+        { routeLinks }
       </Nav>
     );
   }

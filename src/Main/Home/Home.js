@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import Header1 from '../../Typography/Header1'
-import styled from 'styled-components';
+import Header1 from '../../typography/Header1'
+import Button from '../../components/Button';
 
 class Home extends Component {
   render(
   ) 
   {
     return (
-      <Header1>Home!</Header1>
+      <div>
+        <Header1>Home!</Header1>
+        <Button />
+      </div>
     );
   }
 }

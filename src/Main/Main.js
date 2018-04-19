@@ -10,10 +10,10 @@ import styled from 'styled-components';
 
 const Container = styled.section`
   padding: 1em;
-  background-color: #E8EAF6;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  flex: 1;
 `;
 
 class Main extends Component {
@@ -21,7 +21,7 @@ class Main extends Component {
     return (
       <Container>
         <Switch>
-          <Route exact path='/' component={Home}/>
+          <Route path='/' component={Home}/>
           <Route path='/about' component={About}/>
           <Route path='/projects' component={Projects}/>
           <Route path='/contact' component={Contact}/>

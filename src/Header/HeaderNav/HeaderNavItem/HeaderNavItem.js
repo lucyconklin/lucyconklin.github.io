@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const NavItem = styled.section`
   display: inline-block;
@@ -11,7 +11,7 @@ const NavItem = styled.section`
   }
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
   color: #303F9F;
   font-weight: bold;
   text-decoration: none;
@@ -32,7 +32,7 @@ class HeaderNavItem extends Component {
   render() {
     return (
       <NavItem>
-        <StyledLink to={this.props.path}>{this.props.name}</StyledLink>
+        <StyledLink to={this.props.path} activeClassName="is-active" >{this.props.name}</StyledLink>
       </NavItem>
     );
   }

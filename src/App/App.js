@@ -1,31 +1,34 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import styled from 'styled-components';
-import Footer from '../Footer/Footer';
+import Helmet from 'react-helmet';
+
 import Header from '../Header/Header';
 import Main from '../Main/Main';
+import Footer from '../Footer/Footer';
 
-const Button = styled.button`
-  background: ${props => props.primary ? '#374c5f' : 'white'};
-  color: ${props => props.primary ? 'white' : '#374c5f'};
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid #374c5f;
-  border-radius: 3px;
-`;
-
-const buttonText = "I'm a button"
+const Site = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+`
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <Site>
+        <Helmet
+          title="Lucy Conklin Dot Tech"
+          meta={[
+            { name: 'description', content: 'Lucy Conklin\'s personal website, portfolio, blog, and so on ...' },
+            { name: 'keywords', content: 'resume, blog, portfolio, code, lucy conklin' }
+          ]}
+        />
         <Header />
         <Main />
         <Footer />
-      </div>
+      </Site>
     )
   }
 }

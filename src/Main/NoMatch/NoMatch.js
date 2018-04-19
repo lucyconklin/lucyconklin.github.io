@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 
 class NoMatch extends Component {
   render(
   ) 
   {
     return (
-      <h2>No Match ☹️</h2>
+      <h2>No Match <span role="img" aria-label="sad face">☹️</span></h2>
     );
   }
 }
