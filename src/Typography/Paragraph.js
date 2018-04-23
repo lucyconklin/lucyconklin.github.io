@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-const Paragraph = styled.h1`
+const Paragraph = styled.p`
   color: #303F9F;
   font-size: 22px;
-  font-weight: 400;
   line-height: 1.75em;
 `;
 

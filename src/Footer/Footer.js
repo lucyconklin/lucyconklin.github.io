@@ -1,17 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const FooterInfo = styled.footer`
+const FooterInfo = styled.div`
   padding: 4em 0;
-  background: #5C6BC0;
-  color: #E8EAF6;
   position: relative;
   margin-top: 20px;
-  width: 100%;
+  background-color: #283593;
+  color: rgba(255,255,255,0.8);
 `;
 
 const Footer = () => (
-  <FooterInfo className="has-text-centered">
+  <FooterInfo className="has-text-centered is-primary">
     <p>{ 'lucy@lucyconklin.com' }</p>
     <p>{ "lucy conklin 2017" }</ p>
   </FooterInfo>

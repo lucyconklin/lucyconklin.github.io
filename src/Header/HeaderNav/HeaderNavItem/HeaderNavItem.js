@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom'
 
 const NavItem = styled.section`
   display: inline-block;
-  padding: 8px;
+  padding: 4px 8px;
   margin: 8px;
   &:hover {
-    background-color: #E8EAF6;
+    border-bottom: 4px solid #E8EAF6;
   }
 `;
 

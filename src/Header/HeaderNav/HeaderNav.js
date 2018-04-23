@@ -23,7 +23,7 @@ const routes = [
   }
 ]
 
-const routeLinks = routes.map((route, i) => <HeaderNavItem key={i} exact {...route} />)
+const routeLinks = routes.map((route, i) => <HeaderNavItem key={i} {...route} />)
 
 class HeaderNav extends Component {
   render(

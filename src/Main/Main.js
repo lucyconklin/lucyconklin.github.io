@@ -21,7 +21,7 @@ class Main extends Component {
     return (
       <Container>
         <Switch>
-          <Route path='/' component={Home}/>
+          <Route exact path='/' component={Home}/>
           <Route path='/about' component={About}/>
           <Route path='/projects' component={Projects}/>
           <Route path='/contact' component={Contact}/>

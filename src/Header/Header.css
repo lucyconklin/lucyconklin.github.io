@@ -2,9 +2,6 @@
   display: block;
   height: 100px; }
 
-.is-active {
-  color: purple; }
-
 .app-logo #Path {
   animation: color-change 10s linear infinite; }
 
