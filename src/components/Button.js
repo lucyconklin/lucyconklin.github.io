@@ -22,13 +22,13 @@ class Button extends Component {
 
     this.state = {
       active: true,
-      text: buttonText
+      text: this.props.text || buttonText
     };
   }
   
   render() {
     return (
-      <StyledButton primary>{ 'Some text' }</StyledButton>
+      <StyledButton primary className="is-button">{ this.state.text }</StyledButton>
     );
   }
 }

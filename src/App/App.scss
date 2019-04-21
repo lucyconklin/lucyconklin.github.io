@@ -37,7 +37,6 @@ $indigoA400-invert: findColorInvert(#3D5AFE);
 $indigoA700: #304FFE;
 $indigoA700-invert: findColorInvert(#304FFE);
 
-
 $primary: $indigo500;
 $primary-invert: $indigo500-invert;
 $link: $indigo700;
@@ -50,6 +49,8 @@ $warning: $indigoA400;
 $warning-invert: $indigoA400-invert;
 $danger: $indigoA700;
 $danger-invert: $indigoA700-invert;
+
+$light-gray: $indigo50;
 
 // 3. Add new color variables to the color map.
 @import "bulma/sass/utilities/derived-variables.sass";

@@ -5,11 +5,13 @@ import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Now from './Now/Now';
+import Resume from './Resume/Resume';
 import NoMatch from './NoMatch/NoMatch';
 import styled from 'styled-components';
 
 const Container = styled.section`
   padding: 1em;
+  min-width: 80%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -26,6 +28,7 @@ class Main extends Component {
           <Route path='/projects' component={Projects}/>
           <Route path='/contact' component={Contact}/>
           <Route path='/now' component={Now}/>
+          <Route path='/resume' component={Resume}/>
           <Route component={NoMatch}/>
         </Switch>
       </Container>

@@ -7,7 +7,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Open+Sans:400,600,700', 'sans-serif']
+    families: ['Yantramanav:300,500,700', 'sans-serif']
   }
 });
 

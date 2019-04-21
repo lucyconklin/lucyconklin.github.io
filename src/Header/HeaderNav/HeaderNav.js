@@ -20,6 +20,18 @@ const routes = [
   {
     path:'/contact',
     name:'Contact'
+  },
+  {
+    path:'/projects',
+    name:'Projects'
+  },
+  {
+    path:'/resume',
+    name:'Resume'
+  },
+  {
+    path:'/now',
+    name:'Now'
   }
 ]
 

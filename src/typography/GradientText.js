@@ -5,7 +5,7 @@ const GradientText = styled.h1`
   font-size: 72px;
   font-weight: bold;
   line-height: 1.75em;
-  background: -webkit-linear-gradient(left, #536DFE, #304FFE);
+  background: -webkit-linear-gradient(left, #1A237E, #7986CB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;

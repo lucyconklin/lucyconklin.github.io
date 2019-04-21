@@ -21,7 +21,7 @@ class App extends Component {
         <Helmet
           title="Lucy Conklin Dot Tech"
           meta={[
-            { name: 'description', content: 'Lucy Conklin\'s personal website, portfolio, blog, and so on ...' },
+            { name: 'description', content: 'Lucy Conklin\'s personal website, portfolio, and so on ...' },
             { name: 'keywords', content: 'resume, blog, portfolio, code, lucy conklin' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1'}
           ]}

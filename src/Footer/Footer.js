@@ -5,7 +5,7 @@ const FooterInfo = styled.div`
   padding: 4em 0;
   position: relative;
   margin-top: 20px;
-  background-color: #283593;
+  background-color: #374c5f;
   color: rgba(255,255,255,0.8);
 `;
 
