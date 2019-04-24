@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-const Header1 = styled.h1`
+const Header2 = styled.h2`
   color: $purple;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   align: left;
 `;
 
-export default Header1;
+export default Header2;
