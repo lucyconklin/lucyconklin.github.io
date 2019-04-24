@@ -29,3 +29,27 @@
     fill: #7DB759; }
   100% {
     fill: #F1B62B; } }
+
+@keyframes color-change-background {
+  0% {
+    background-color: #F1B62B; }
+  11% {
+    background-color: #E37C22; }
+  23% {
+    background-color: #DA0B36; }
+  37% {
+    background-color: #AF0B58; }
+  50% {
+    background-color: #7B3A88; }
+  64% {
+    background-color: #3F51B5; }
+  77% {
+    background-color: #1CA176; }
+  91% {
+    background-color: #7DB759; }
+  100% {
+    background-color: #F1B62B; } }
+
+.header-bar {
+  height: 8px;
+  animation: color-change-background 10s linear infinite; }

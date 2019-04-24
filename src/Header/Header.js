@@ -19,6 +19,7 @@ class Header extends Component {
   {
     return (
       <section className="header">
+        <div className="header-bar"></div>
         <Link to="/">
           <HeaderLogo style={ style }/>
         </Link>
