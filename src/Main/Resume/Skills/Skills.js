@@ -6,10 +6,12 @@ const SkillList = styled.ul`
   margin: 0;
 `;
 
+const colorMap = {css: "#1A237E", html: "#8C9EFF"};
+
 const Skill = styled.li`
   padding: 6px 12px;
   margin: 0 4px 0 0;
-  background-color: #3F51B5;
+  background-color: ${props => colorMap[props.name] ||  "#3F51B5"};
   display: inline-block;
   color: white;
   border-radius: 3px;
@@ -18,7 +20,7 @@ const Skill = styled.li`
 function Skills(props) {
   const skills = props.skills;
   const skillItems = skills.map((skill) =>
-    <Skill>{ skill }</Skill>
+    <Skill name={ skill }>{ skill }</Skill>
   );
 
   return (

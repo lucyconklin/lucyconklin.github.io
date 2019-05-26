@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Header3 from '../../../typography/Header3';
+import Header3 from '../../../Typography/Header3';
 import Skills from '../Skills/Skills';
 
 const Item = styled.section`

@@ -11,11 +11,18 @@ import styled from 'styled-components';
 
 const Container = styled.section`
   padding: 1em;
-  min-width: 80%;
+  width: 70%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   flex: 1;
+  
+  @media (max-width: 1000px) {
+    width: 80%;
+  
+  @media (max-width: 700px) {
+    width: 90%;
+}
 `;
 
 class Main extends Component {

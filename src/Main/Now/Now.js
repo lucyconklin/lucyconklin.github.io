@@ -1,6 +1,6 @@
 import React from 'react';
-import Header1 from '../../typography/Header1';
-import Paragraph from '../../typography/Paragraph';
+import Header1 from '../../Typography/Header1';
+import Paragraph from '../../Typography/Paragraph';
 
 const Now = () => (
   <section>

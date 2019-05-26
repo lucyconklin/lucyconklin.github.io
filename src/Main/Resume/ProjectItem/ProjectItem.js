@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Header3 from '../../../typography/Header3';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import Header3 from '../../../Typography/Header3';
 import Skills from '../Skills/Skills';
 
 const Item = styled.section`
@@ -21,6 +23,10 @@ const Date = styled.h3`
   margin-left: 10px;
 `;
 
+const StyledIcon = styled(FontAwesomeIcon)`
+  color: orchid;
+`;
+
 class ProjectItem extends Component {
   constructor(props) {
     super(props);
@@ -28,14 +34,24 @@ class ProjectItem extends Component {
     this.state = {
       active: true
     };
+    
   }
 
   render() {
+    let link;
+    
+    if (this.props.link) {
+      link = <a href={this.props.link} target="blank">
+        <StyledIcon icon={ faGlobe } />
+      </a>
+    }
+    
     return (
       <Item>
         <Header>{ this.props.name }</Header><Date>{ this.props.year }</Date>
         <p>{ this.props.description }</p>
         <Skills skills={ this.props.skills }/>
+        { link }
       </Item>
     )
   }

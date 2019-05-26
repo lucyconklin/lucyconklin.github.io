@@ -1,15 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header1 from '../../typography/Header1';
-import GradientText from '../../typography/GradientText';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import Header1 from '../../Typography/Header1';
+import GradientText from '../../Typography/GradientText';
 import ProjectItem from './ProjectItem/ProjectItem'
 import ResumeItem from './ResumeItem/ResumeItem';
 import EducationItem from './EducationItem/EducationItem';
 
+const StyledIcon = styled(FontAwesomeIcon)`
+  color: orchid;
+`;
+
 const projectList = [
   {
     name: 'International Space Station Tracker',
-    link: '#',
+    link: 'https://international-space-station.herokuapp.com/',
     description: 'This was a personal project at the Turing School. I was selected as a finalist for the Employer Demo Night.',
     skills: ['Building and Using APIs', 'D3','rSpec'],
     year: '2017'
@@ -23,21 +30,31 @@ const projectList = [
   },
   {    
     name: 'My Illustration Portfolio',
-    link: '#',
+    link: 'https://www.lucyconklin.com',
     description: 'This has been my longest running project. I started coding with the intention of building myself a place to showcase my artwork and the rest is history.',
     skills: ['HTML', 'CSS', 'Bootstrap'],
     year: '2010-current'
-  },
-  {
-    name: 'Code Apprentice',
-    link: '#',
-    description: 'I volunteer a few hours a week with a high school student learning coding skills. We work through paired coding challenges, and projects.',
-    skills: ['Volunteer', 'HTML', 'CSS', 'Javascript'],
-    year: '2019-current'
   }
 ]
 
 const projectItems = projectList.map((projectItem, i) => <ProjectItem key={i} {...projectItem} />)
+
+const volunteerList = [
+  {
+    name: 'Code Apprentice',
+    description: 'I volunteer a few hours a week with a high school student learning coding skills. We work through paired coding challenges, and projects.',
+    skills: ['HTML', 'CSS', 'Javascript', 'jQuery'],
+    year: '2019-current'
+  },
+  {
+    name: 'Turing School of Software and Design Alumni Committee',
+    description: 'We support Turing\'s mission through recruiting new students, assisting current students, helping recent graduates in their job searches, and by connecting alumni through volunteer and networking events.',
+    skills: [],
+    year: '2018-current'
+  }
+]
+
+const volunteerItems = volunteerList.map((volunteerItem, i) => <ProjectItem key={i} {...volunteerItem} />)
 
 const resumeList = [
   {
@@ -91,12 +108,19 @@ const educationItems = educationList.map((educationItem, i) => <EducationItem ke
 const Resume = () => (
   <section>
     <GradientText>Lucy Conklin</GradientText>
+    <Header1>Contact</Header1>
+      <a href="https://github.com/lucyconklin" target="blank"><h4>Github <StyledIcon icon={ faGithub } /></h4></a>
+      <a href="https://www.linkedin.com/in/lucy-conklin/" target="blank"><h4>LinkedIn <StyledIcon icon={ faLinkedin } /></h4></a>
+      <a href="mailto:lucy.conklin@gmail.com" target="blank"><h4>lucy.conklin@gmail.com <StyledIcon icon={ faEnvelope } /></h4></a>
+      <a href="tel:1-570-713-9582" target="blank"><h4>570.713.9582 <StyledIcon icon={ faMobileAlt } /></h4></a>
     <Header1>Projects</Header1>
     { projectItems }
     <Header1>Experience</Header1>
     { resumeItems }
     <Header1>Education</Header1>
     { educationItems }
+    <Header1>Volunteer</Header1>
+    { volunteerItems }
   </section>
 )
 

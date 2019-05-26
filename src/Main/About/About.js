@@ -1,7 +1,7 @@
 import React from 'react';
-import Header1 from '../../typography/Header1';
-import Paragraph from '../../typography/Paragraph';
-import GradientText from '../../typography/GradientText';
+import Header1 from '../../Typography/Header1';
+import Paragraph from '../../Typography/Paragraph';
+import GradientText from '../../Typography/GradientText';
 import Button from '../../components/Button';
 
 const About = () => (
