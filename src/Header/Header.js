@@ -10,7 +10,7 @@ const HeaderLogo = () =>
     </g>
   </svg>
   
-const style = 
+const style =
   'float: left;'
 
 class Header extends Component {

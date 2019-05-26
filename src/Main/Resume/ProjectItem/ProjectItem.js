@@ -21,7 +21,7 @@ const Date = styled.h3`
   margin-left: 10px;
 `;
 
-class EducationItem extends Component {
+class ProjectItem extends Component {
   constructor(props) {
     super(props);
 
@@ -29,11 +29,11 @@ class EducationItem extends Component {
       active: true
     };
   }
-  
+
   render() {
     return (
       <Item>
-        <Header>{ this.props.school }</Header><Date>{ this.props.year }</Date>
+        <Header>{ this.props.name }</Header><Date>{ this.props.year }</Date>
         <p>{ this.props.description }</p>
         <Skills skills={ this.props.skills }/>
       </Item>
@@ -41,4 +41,4 @@ class EducationItem extends Component {
   }
 };
 
-export default EducationItem;
+export default ProjectItem;
