@@ -7,7 +7,7 @@ const GradientText = styled.h1`
   line-height: 1.75em;
   background: -webkit-linear-gradient(left, #1A237E, #7986CB);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: rgba(255,255,255,0);
   display:table;
 `;
 

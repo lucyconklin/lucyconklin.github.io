@@ -18,9 +18,8 @@ const StyledFooterIcon = styled(FontAwesomeIcon)`
 
 const Footer = () => (
   <FooterInfo className="has-text-centered is-primary">
-    <p>{ 'lucy@lucyconklin.com' }</p>
+    <h4>{ 'lucy@lucyconklin.com' }</h4>
     <p>{ "lucy conklin 2017" }</ p>
-    <StyledFooterIcon icon={ faCoffee } />
   </FooterInfo>
 )
 
