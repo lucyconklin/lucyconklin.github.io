@@ -13,6 +13,10 @@ const Header = styled.h3`
   font-weight: bold;
 `;
 
+const Position = styled.h3`
+  font-weight: bold;
+`
+
 const Date = styled.h3`
   display: inline-block;
   color: #777;
@@ -34,7 +38,7 @@ class ResumeItem extends Component {
     return (
       <Item>
         <Header>{ this.props.company }</Header><Date>{ this.props.year }</Date>
-        <h3>{ this.props.position }</h3>
+        <Position>{ this.props.position }</Position>
         <p>{ this.props.description }</p>
         <Skills skills={ this.props.skills }/>
       </Item>

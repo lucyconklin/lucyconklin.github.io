@@ -38,6 +38,9 @@
 }
 
 .header-bar {
-  height: 8px;
+  height: 120px;
   animation: color-change-background 10s linear infinite;
+  position:fixed;
+  top:-111px;
+  width: 100%;
 }

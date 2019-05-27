@@ -51,5 +51,8 @@
     background-color: #F1B62B; } }
 
 .header-bar {
-  height: 8px;
-  animation: color-change-background 10s linear infinite; }
+  height: 120px;
+  animation: color-change-background 10s linear infinite;
+  position: fixed;
+  top: -111px;
+  width: 100%; }
