@@ -6,9 +6,10 @@ const GradientText = styled.h1`
   font-weight: bold;
   line-height: 1.75em;
   background: -webkit-linear-gradient(left, #1A237E, #7986CB);
+  -webkit-mask-image: linear-gradient(left, #1A237E, #7986CB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
-  display:table;
+  display:inline-block;
 `;
 
 export default GradientText;
