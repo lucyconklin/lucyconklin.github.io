@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faEnvelope, faMobileAlt, faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import Header1 from '../../Typography/Header1';
+import Header4 from '../../Typography/Header4';
 import GradientText from '../../Typography/GradientText';
 import ProjectItem from './ProjectItem/ProjectItem'
 import ResumeItem from './ResumeItem/ResumeItem';
@@ -47,7 +47,7 @@ const projectList = [
     link: 'https://international-space-station.herokuapp.com/',
     repo: 'https://github.com/lucyconklin/international_space_station',
     description: 'There are people in space, right now. This app displays the position of the International Space Station. This was a personal project at the Turing School. I was selected as a finalist for the Employer Demo Night.',
-    skills: ['Building and Consuming APIs', 'D3.js','RSpec'],
+    skills: ['Building and Consuming APIs', 'D3.js','RSpec','Ruby on Rails', 'Heroku'],
     year: '2017'
   },
   {    
@@ -131,7 +131,7 @@ const educationItems = educationList.map((educationItem, i) => <EducationItem ke
 const Resume = () => (
   <section>
     <GradientText>Lucy Conklin</GradientText>
-    <Header1>Contact</Header1>
+    <Header4>Contact</Header4>
     <div className="section-separator"></div>
       <ContactSection className="contact-section">
         <a href="https://github.com/lucyconklin" target="blank">
@@ -162,16 +162,16 @@ const Resume = () => (
           </ContactHeader>
         </a>
       </ContactSection>
-    <Header1>Projects</Header1>
+    <Header4>Projects</Header4>
     <div className="section-separator"></div>
     { projectItems }
-    <Header1>Experience</Header1>
+    <Header4>Experience</Header4>
     <div className="section-separator"></div>
     { resumeItems }
-    <Header1>Education</Header1>
+    <Header4>Education</Header4>
     <div className="section-separator"></div>
     { educationItems }
-    <Header1>Volunteer</Header1>
+    <Header4>Volunteer</Header4>
     <div className="section-separator"></div>
     { volunteerItems }
   </section>

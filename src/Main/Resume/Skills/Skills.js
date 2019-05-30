@@ -19,7 +19,7 @@ const Skill = styled.li`
   
   &:hover {
     background-color: ${props => colorMap[props.name] ||  "#3F51B5"};
-    border: 2px solid #E8EAF6;
+    border: 2px solid #8C9EFF;
     color: #E8EAF6;
   }
 `;
