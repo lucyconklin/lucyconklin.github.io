@@ -10,7 +10,7 @@ const FooterInfo = styled.div`
   padding-right: 15%;
   padding-left: 15%;
   margin-top: 20px;
-  background-color: #374c5f;
+  background-color: #fff;
   text-align: left;
   
   @media (max-width: 1000px) {
@@ -25,7 +25,7 @@ const FooterInfo = styled.div`
 
 const FooterText = styled.h4`
   font-weight: bold;
-  color: #E8EAF6;
+  color: #3949AB;
 `
 
 const SocialContainer = styled.section`
@@ -47,14 +47,14 @@ const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 12px;
   
   &:hover {
-    color: #C5CAE9;
+    color: #3D5AFE;
   }
 `;
 
 const Footer = () => (
   <FooterInfo className="has-text-centered is-primary">
     <CopyrightContainer>
-      <FooterText>{ 'lucy@lucyconklin.com' }</FooterText>
+      <FooterText>{ '' }</FooterText>
     </CopyrightContainer>
     <SocialContainer>
       <a href="https://github.com/lucyconklin" target="blank">

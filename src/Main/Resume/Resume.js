@@ -2,7 +2,7 @@ import React from 'react';
 import './Resume.css';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faEnvelope, faMobileAlt, faLink } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMobileAlt, faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Header4 from '../../Typography/Header4';
 import GradientText from '../../Typography/GradientText';
@@ -30,7 +30,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 `;
 
 const ContactSection = styled.section`
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 `
 
 const projectList = [
@@ -38,7 +38,8 @@ const projectList = [
     name: 'This site',
     link: '#',
     repo: 'https://github.com/lucyconklin/lucyconklin.github.io',
-    description: 'I wanted to further my React skills, so I started with the create-react-app and added on additional tools one at a time. I started with React Router, and added styled components.',
+    description: 'To further my React skills, I started with the create-react app and added additional tools one at a time. \
+      I initiated my work with React Router and added styled components.',
     skills: ['React', 'Styled Components', 'React Router'],
     year: '2018-current'
   },
@@ -46,7 +47,8 @@ const projectList = [
     name: 'International Space Station Tracker',
     link: 'https://international-space-station.herokuapp.com/',
     repo: 'https://github.com/lucyconklin/international_space_station',
-    description: 'There are people in space, right now. This app displays the position of the International Space Station. This was a personal project at the Turing School. I was selected as a finalist for the Employer Demo Night.',
+    description: 'My app displays the position of the International Space Station and where people are in space, right now. \
+      This project was started while at the Turing School and was a selected finalist for the Employer Demo Night.',
     skills: ['Building and Consuming APIs', 'D3.js','RSpec','Ruby on Rails', 'Heroku'],
     year: '2017'
   },
@@ -54,9 +56,20 @@ const projectList = [
     name: 'My Illustration Portfolio',
     link: 'https://www.lucyconklin.com',
     repo: '',
-    description: 'This has been my longest running project. In 2010 I took a HTML/CSS class, and started coding this site shortly after with the intention of building myself a place to showcase my artwork. I\'ve been tinkering with it ever since.',
+    description: 'In 2010 I started my longest running and my personal pet project. \
+      I took HTML/CSS classes to start coding work in order to create a site to showcase my artwork. \
+      I have been continuously improving it ever since.',
     skills: ['HTML', 'CSS', 'Bootstrap'],
     year: '2010-current'
+  },
+  {
+    name: 'Pivotal Tracker Gem (Open Source Contribution)',
+    link: '',
+    repo: 'https://github.com/jasonnoble/pivotal-tracker',
+    description: 'This open source project is a wrapper fo the Pivotal Tracker API. \
+      We were updating it to support version 5 of the API.',
+    skills: ['Ruby', 'RSpec', 'OSS'],
+    year: '2017'
   }
 ]
 
@@ -65,13 +78,16 @@ const projectItems = projectList.map((projectItem, i) => <ProjectItem key={i} {.
 const volunteerList = [
   {
     name: 'Code Apprentice',
-    description: 'I volunteer a few hours a week with a high school student learning coding skills. We work through paired coding challenges, and projects.',
+    description: 'I volunteer a few hours a week with a high school student learning coding skills. \
+      We work through paired coding challenges, and projects.',
     skills: ['HTML', 'CSS', 'Javascript', 'jQuery'],
     year: '2019-current'
   },
   {
     name: 'Turing School of Software and Design Alumni Committee',
-    description: 'We support Turing\'s mission through recruiting new students, assisting current students, helping recent graduates in their job searches, and by connecting alumni through volunteer and networking events.',
+    description: 'We support Turing\'s mission through recruiting new students, \
+      assisting current students, helping recent graduates in their job searches, \
+      and by connecting alumni through volunteer and networking events.',
     skills: [],
     year: '2018-current'
   }
@@ -84,15 +100,23 @@ const resumeList = [
     company: 'SingleOps',
     year: '2017-current',
     position: 'Web Developer',
-    description: 'Full-stack developer',
-    skills: ['Ruby on Rails', 'Ruby', 'mySQL', 'AWS', 'Bootstrap', 'jQuery', 'SASS', 'Git']
+    description: 'As a full stack developer on our small team at SingleOps, I play a role in every step of our product improvement process. \
+      This involves a nice mix of developing new features as well as improving existing ones. \
+      I see features through the entire lifecycle from gathering requirements, creating mockups, development, code review, QA, trainings, all the way to implementation with new clients.\
+      Additionally, I work directly with our clients to build custom reports with MySQL. \
+      Many of our clients are self-taught entrepreneurs and I have quickly learned that they measure their success in a wide variety of ways.\
+      These reports help them analyze their performace to improve efficiency and inform their business decisions. \
+      This required me to develop a process for estimating, managing, and organizing these requests, \
+      as well as an internal guide for SQL best practices. \
+      ',
+    skills: ['Ruby on Rails', 'Ruby', 'MySQL', 'AWS', 'Bootstrap', 'jQuery', 'SASS', 'Git', 'CoffeeScript']
   },
   {
     company: 'California State University at Monterey Bay',
     year: '2013-2016',
     position: 'Instructor',
     description: 'I developed the curriculum for and taught general science illustration, digital illustration, and zoological illustration to graduate students.',
-    skills: []
+    skills: ['Adobe Creative Suite', 'Photoshop', 'Illustrator']
   },
   {
     company: 'University of California, Santa Cruz',
@@ -131,37 +155,35 @@ const educationItems = educationList.map((educationItem, i) => <EducationItem ke
 const Resume = () => (
   <section>
     <GradientText>Lucy Conklin</GradientText>
-    <Header4>Contact</Header4>
-    <div className="section-separator"></div>
-      <ContactSection className="contact-section">
-        <a href="https://github.com/lucyconklin" target="blank">
-          <ContactHeader>
-            <StyledIcon icon={ faGithub } /> 
-            Github 
-          </ContactHeader>
-        </a>
-        
-        <a href="https://www.linkedin.com/in/lucy-conklin/" target="blank">
-          <ContactHeader>
-            <StyledIcon icon={ faLinkedin } /> 
-            LinkedIn 
-          </ContactHeader>
-        </a>
-        
-        <a href="mailto:lucy.conklin@gmail.com" target="blank">
-          <ContactHeader>
-            <StyledIcon icon={ faEnvelope } /> 
-            lucy.conklin@gmail.com 
-          </ContactHeader>
-        </a>
-        
-        <a href="tel:1-570-713-9582" target="blank">
-          <ContactHeader>
-            <StyledIcon icon={ faMobileAlt } /> 
-            570.713.9582 
-          </ContactHeader>
-        </a>
-      </ContactSection>
+    <ContactSection className="contact-section">
+      <a href="https://github.com/lucyconklin" target="blank">
+        <ContactHeader>
+          <StyledIcon icon={ faGithub } /> 
+          Github 
+        </ContactHeader>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/lucy-conklin/" target="blank">
+        <ContactHeader>
+          <StyledIcon icon={ faLinkedin } /> 
+          LinkedIn 
+        </ContactHeader>
+      </a>
+      
+      <a href="mailto:lucy.conklin@gmail.com" target="blank">
+        <ContactHeader>
+          <StyledIcon icon={ faEnvelope } /> 
+          lucy.conklin@gmail.com 
+        </ContactHeader>
+      </a>
+      
+      <a href="tel:1-570-713-9582" target="blank">
+        <ContactHeader>
+          <StyledIcon icon={ faMobileAlt } /> 
+          570.713.9582 
+        </ContactHeader>
+      </a>
+    </ContactSection>
     <Header4>Projects</Header4>
     <div className="section-separator"></div>
     { projectItems }

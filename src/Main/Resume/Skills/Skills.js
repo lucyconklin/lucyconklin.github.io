@@ -9,18 +9,14 @@ const SkillList = styled.ul`
 const colorMap = {css: "#1A237E", html: "#8C9EFF"};
 
 const Skill = styled.li`
-  padding: 6px 12px;
+  padding: 4px 6px;
   margin: 4px;
   display: inline-block;
-  border-radius: 24px;
-  border: 2px solid #8C9EFF;
   color: #8C9EFF;
   font-weight: bold;
   
   &:hover {
-    background-color: ${props => colorMap[props.name] ||  "#3F51B5"};
-    border: 2px solid #8C9EFF;
-    color: #E8EAF6;
+    color: #3F51B5;
   }
 `;
 

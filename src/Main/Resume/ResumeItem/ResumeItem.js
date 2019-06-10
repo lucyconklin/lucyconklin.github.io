@@ -25,6 +25,10 @@ const Date = styled.h3`
   margin-left: 10px;
 `;
 
+const Paragraph = styled.p`
+  margin-top: 8px;
+`
+
 class ResumeItem extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +43,7 @@ class ResumeItem extends Component {
       <Item>
         <Header>{ this.props.company }</Header><Date>{ this.props.year }</Date>
         <Position>{ this.props.position }</Position>
-        <p>{ this.props.description }</p>
+        <Paragraph>{ this.props.description }</Paragraph>
         <Skills skills={ this.props.skills }/>
       </Item>
     )
