@@ -196,7 +196,6 @@ const Resume = () => (
     <Header4>Volunteer</Header4>
     <div className="section-separator"></div>
     { volunteerItems }
-    <a href="./Lucy_Conklin_Resume_6_2019.pdf" download>Download a pdf of this r&eacute;sum&eacute;</a>
   </section>
 )
 
