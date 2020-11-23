@@ -63,7 +63,7 @@ const projectList = [
     year: '2010-current'
   },
   {
-    name: 'Pivotal Tracker Gem (Open Source Contribution)',
+    name: 'Pivotal Tracker Gem (Open Source)',
     link: '',
     repo: 'https://github.com/jasonnoble/pivotal-tracker',
     description: 'This open source project is a wrapper fo the Pivotal Tracker API. \
@@ -81,7 +81,7 @@ const volunteerList = [
     description: 'I volunteer a few hours a week with a high school student learning coding skills. \
       We work through paired coding challenges, and projects.',
     skills: ['HTML', 'CSS', 'Javascript', 'jQuery'],
-    year: '2019-current'
+    year: '2019'
   },
   {
     name: 'Turing School of Software and Design Alumni Committee',
@@ -97,14 +97,22 @@ const volunteerItems = volunteerList.map((volunteerItem, i) => <ProjectItem key=
 
 const resumeList = [
   {
+    company: 'Homebound',
+    year: '2019-current',
+    position: 'Software Engineer',
+    description: '\
+      ',
+    skills: ['GraphQL', 'Typescript', 'AWS', 'Apollo', 'Postgres']
+  },
+  {
     company: 'SingleOps',
-    year: '2017-current',
+    year: '2017-2019',
     position: 'Web Developer',
-    description: 'As a full stack developer on our small team at SingleOps, I play a role in every step of our product improvement process. \
-      This involves a nice mix of developing new features as well as improving existing ones. \
-      I see features through the entire lifecycle from gathering requirements, creating mockups, development, code review, QA, trainings, all the way to implementation with new clients.\
-      Additionally, I work directly with our clients to build custom reports with MySQL. \
-      Many of our clients are self-taught entrepreneurs and I have quickly learned that they measure their success in a wide variety of ways.\
+    description: 'As a full stack developer on our small team at SingleOps, I played a role in every step of our product improvement process. \
+      This involved a nice mix of developing new features as well as improving existing ones. \
+      I saw features through the entire lifecycle from gathering requirements, creating mockups, development, code review, QA, trainings, all the way to implementation with new clients.\
+      Additionally, I worked directly with our clients to build custom reports with MySQL. \
+      Many of these clients are self-taught entrepreneurs and I have quickly learned that they measure their success in a wide variety of ways.\
       These reports help them analyze their performace to improve efficiency and inform their business decisions. \
       This required me to develop a process for estimating, managing, and organizing these requests, \
       as well as an internal guide for SQL best practices. \

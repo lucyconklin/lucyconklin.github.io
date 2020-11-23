@@ -22,7 +22,7 @@ class Introduction extends Component {
       <StyledIntroduction>
         <GradientText>Lucy Conklin</GradientText>
         <Paragraph>
-          I'm a developer and designer for SingleOps. Currently based in Colorado. I love working on interesting problems, with a team, in an environment where I never stop learning.
+          I'm a software developer at <a href="www.homebound.com">Homebound</a>. Currently based in Colorado. I love working on interesting problems, with a team, in an environment where I never stop learning.
         </Paragraph>
       </StyledIntroduction>
     );
