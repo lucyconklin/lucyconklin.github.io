@@ -1,26 +1,21 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Css } from "./Css";
+import { jsx, css } from '@emotion/react';
+import { Footer } from "./Footer";
+import { Main } from "./Main";
+import { Header } from "./Header";
+import { Outlet } from 'react-router-dom';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div css={Css.df.fdc.ais.vh100.bgWhite.m0.p0.$} className="App">
+      <Header />
+      <div css={Css.w75.df.fdc.asc.pb7.$}>
+        <h2 css={Css.f24.indigo500.$}>Lucy Conklin</h2>
+        <Outlet />
+      </div>
+      <Footer />
     </div>
   );
 }
-
-export default App;
