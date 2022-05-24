@@ -13,8 +13,15 @@ export function Resume() {
   return (
     <div>
       <div>
-        { sections }
+      <a 
+        css={{...Css.noUnderline.brightIndigo700.transitionSlow.bb.bw2.bHollow.b.mr4.$, "&:hover": Css.indigo900.bb.bw2.bBrightIndigo100.$ }} 
+        href="mailto:lucy.conklin@gmail.com" 
+        target="blank"
+      >
+        lucy.conklin@gmail.com 
+      </a>
       </div>
+      { sections }
     </div>
   )
 }

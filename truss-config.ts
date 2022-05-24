@@ -15,6 +15,7 @@ const fonts: FontConfig = {
   f18: "18px",
   f20: "20px",
   f24: "24px",
+  f40: "40px",
   // Besides the "24px" shorthand, you can define weight+size+lineHeight tuples
   tiny: { fontWeight: 400, fontSize: "10px", lineHeight: "14px" },
 };

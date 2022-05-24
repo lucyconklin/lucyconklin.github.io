@@ -15,6 +15,7 @@ export type Typography =
   | "f18"
   | "f20"
   | "f24"
+  | "f40"
   | "tiny";
 
 type Opts<T> = {
@@ -623,6 +624,7 @@ class CssBuilder<T extends Properties1> {
   get f18() { return this.add("fontSize", "18px"); }
   get f20() { return this.add("fontSize", "20px"); }
   get f24() { return this.add("fontSize", "24px"); }
+  get f40() { return this.add("fontSize", "40px"); }
   get tiny() { return this.add("fontWeight", 400).add("fontSize", "10px").add("lineHeight", "14px"); }
 
   // typography
