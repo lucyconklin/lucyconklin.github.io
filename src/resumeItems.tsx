@@ -41,7 +41,7 @@ const work: ResumeItem[] = [
     years: "2022-2024",
     subtitle: "Software Engineering Lead",
     detail:
-      "As part of our mission to electrify 100 million American homes, we developed software founded in building science and modelling to enable us to analyze, plan, and recommend the most efficient equipment and accurate incentives tailored to each household. By utilizing Helio's solutions, customers not only reduce their carbon footprint but also save on utility expenses and enhance the quality of indoor air, fostering healthier homes and communities. Over the course of two years we booked over $8 million in revenue and electrified 300+ homes in Colorado, removing 1300 tons of carbon per year, or the equivalent of over 3 million miles driven.",
+      "As part of our mission to electrify 100 million American homes, we developed software founded in building science and modeling to enable us to analyze, plan, and recommend the most efficient equipment and accurate incentives tailored to each household. By utilizing Helio's solutions, customers not only reduce their carbon footprint but also save on utility expenses and enhance the quality of indoor air, fostering healthier homes and communities. Over the course of two years we booked over $8 million in revenue and electrified 300+ homes in Colorado, removing 1300 tons of carbon per year, or the equivalent of over 3 million miles driven.",
     skills: [
       "React",
       "Typescript",
