@@ -8,7 +8,7 @@ export function Header() {
     <div css={Css.df.fdc.aifs.$}>
       <div css={Css.h2.colorChangeBg.w100.mb2.$}></div>
       <nav css={Css.df.aifs.fdr.$}>
-        <Link to="#" css={Css.mx5.$}>
+        <Link to="/" css={Css.mx5.$}>
           <HeaderLogo />
         </Link>
         <div css={Css.h7.mt4.$}>

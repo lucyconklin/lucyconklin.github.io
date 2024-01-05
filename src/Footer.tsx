@@ -4,7 +4,7 @@ import { Css, px } from "./Css";
 
 export function Footer() {
   return (
-    <div css={Css.df.asc.fdr.w75.pb7.$}>
+    <div css={Css.df.asfs.fdr.pb7.$}>
       <section css={Css.mr5.maxw(px(500)).$}>
         <SocialLink name="github" path="https://github.com/lucyconklin" />
         <SocialLink
