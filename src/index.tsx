@@ -1,19 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-import { Main } from './Main';
-import { Resume } from './Resume';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Main } from "./Main";
+import { Resume } from "./Resume";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement,
 );
+
+// Handle redirect from 404.html for clean URLs
+const redirect = sessionStorage.getItem("redirect");
+if (redirect) {
+  sessionStorage.removeItem("redirect");
+  window.history.replaceState(null, "", redirect);
+}
+
 root.render(
   <BrowserRouter>
     <Routes>
@@ -23,7 +27,7 @@ root.render(
         <Route path="*" element={<Main />} />
       </Route>
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>,
 );
 
 // If you want to start measuring performance in your app, pass a function
