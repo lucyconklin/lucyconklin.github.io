@@ -37,6 +37,24 @@ const education: ResumeItem[] = [
 
 const work: ResumeItem[] = [
   {
+    title: "Solstice",
+    years: "2024-2025",
+    subtitle: "Software Engineer",
+    detail:
+      "Helped advance community solar projects by building a portal for our channel partners to manage their capacity and invoicing. I worked closely with the product, engineering, and sales teams to research, design, and implement a suite of new features while we rapidly scaled our channel partner operations.",
+    section: "work",
+    skills: ["React", "Typescript", "Postgres"],
+  },
+  {
+    title: "Ritter",
+    years: "2024",
+    section: "work",
+    subtitle: "Co-Founder",
+    detail:
+      "At Ritter we envisioned a seamless tool to help plumbers rapidly accelerate installations of heat pump water heaters. These remarkable machines combine existing technologies to drastically improve the efficiency of a home's hot water heating. Local, state, and federal incentives for these projects are substantial but difficult to navigate. Our platform used AI to quickly analyze the existing equipment and surrounding space to anticipate installation complexities and additional costs, as well as provide a clear story about energy and financial savings.",
+    skills: ["React", "Typescript", "Next.js", "AI"],
+  },
+  {
     title: "Helio Home",
     years: "2022-2024",
     subtitle: "Software Engineering Lead",

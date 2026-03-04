@@ -55,16 +55,23 @@ const palette = {
 
 // You can add/remove your own application-specific/one-off rules as needed.
 
-const colorChangeBgKeyframes = "@keyframes color-change-background {0% {background-color: #F1B62B} 11% {background-color: #E37C22} 23% {background-color: #DA0B36} 37% {background-color: #AF0B58} 50% {background-color: #7B3A88} 64% {background-color: #3F51B5} 77% {background-color: #1CA176} 91% {background-color: #7DB759} 100% {background-color: #F1B62B}}"
-const colorChangeFillKeyframes = "@keyframes color-change-fill {0% {fill: #F1B62B} 11% {fill: #E37C22} 23% {fill: #DA0B36} 37% {fill: #AF0B58} 50% {fill: #7B3A88} 64% {fill: #3F51B5} 77% {fill: #1CA176} 91% {fill: #7DB759} 100% {fill: #F1B62B}}"
+const colorChangeBgKeyframes =
+  "@keyframes color-change-background {0% {background-color: #F1B62B} 11% {background-color: #E37C22} 23% {background-color: #DA0B36} 37% {background-color: #AF0B58} 50% {background-color: #7B3A88} 64% {background-color: #3F51B5} 77% {background-color: #1CA176} 91% {background-color: #7DB759} 100% {background-color: #F1B62B}}";
+const colorChangeFillKeyframes =
+  "@keyframes color-change-fill {0% {fill: #F1B62B} 11% {fill: #E37C22} 23% {fill: #DA0B36} 37% {fill: #AF0B58} 50% {fill: #7B3A88} 64% {fill: #3F51B5} 77% {fill: #1CA176} 91% {fill: #7DB759} 100% {fill: #F1B62B}}";
 const sections = {
   animation: () => [
-    newMethod("colorChangeBg", { animation: `color-change-background 10s linear infinite; ${colorChangeBgKeyframes}` }),
-    newMethod("colorChangeFill", { animation: `color-change-fill 10s linear infinite; ${colorChangeFillKeyframes}`})
+    newMethod("colorChangeBg", {
+      animation: `color-change-background 10s linear infinite; ${colorChangeBgKeyframes}`,
+    }),
+    newMethod("colorChangeFill", {
+      animation: `color-change-fill 10s linear infinite; ${colorChangeFillKeyframes}`,
+    }),
   ],
   transition: () => [
-    newMethod("transitionSlow", { transition: "all 1s ease"})
-  ]
+    newMethod("transitionSlow", { transition: "all 1s ease" }),
+  ],
+  blur: () => [newMethod("blur", { filter: "blur(4px)" })],
 };
 
 // Defines common application-specific aliases of abbreviation -> N other abbreviations

@@ -719,6 +719,9 @@ class CssBuilder<T extends Properties1> {
   // transition
   get transitionSlow() { return this.add("transition", "all 1s ease"); }
 
+  // blur
+  get blur() { return this.add("filter", "blur(4px)"); }
+
   // aliases
   get bodyText() { return this.f14.black; }
   
